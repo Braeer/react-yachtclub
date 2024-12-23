@@ -1,0 +1,111 @@
+{
+  "ServiceCardData": [
+    {
+      "id": 1,
+      "img": "image.jpg",
+      "title": "Детская парусная секция",
+      "description": "Обучение мальчиков и девочек основам управления парусным судном, участие в парусных соревнованиях, общая физическая подготовка, умение работать в команде, воспитание дисциплины",
+      "modal": {
+        "title": "Детская парусная секция"
+      }
+    },
+    {
+      "id": 2,
+      "img": "image-2.jpg",
+      "title": "Детская секция морского многоборья",
+      "description": "Занятие 5-ю видами спорта: плаванием в бассейне, греблей и парусным спортом, стрельбой в тире, кроссовая подготовка. Участие в соревнованиях разного уровня"
+    },
+    {
+      "id": 3,
+      "img": "image-1.jpg",
+      "title": "Обучение взрослых яхтингу",
+      "description": "Обучение управлению парусным судном по ускоренной индивидуальной программе с выдачей международного сертификата."
+    },
+    {
+      "id": 4,
+      "img": "image.jpg",
+      "title": "Детская парусная секция",
+      "description": "Обучение мальчиков и девочек основам управления парусным судном, участие в парусных соревнованиях, общая физическая подготовка, умение работать в команде, воспитание дисциплины",
+      "modal": {
+        "title": "Детская парусная секция"
+      }
+    },
+    {
+      "id": 5,
+      "img": "image-2.jpg",
+      "title": "Детская секция морского многоборья",
+      "description": "Занятие 5-ю видами спорта: плаванием в бассейне, греблей и парусным спортом, стрельбой в тире, кроссовая подготовка. Участие в соревнованиях разного уровня"
+    },
+    {
+      "id": 6,
+      "img": "image-1.jpg",
+      "title": "Обучение взрослых яхтингу",
+      "description": "Обучение управлению парусным судном по ускоренной индивидуальной программе с выдачей международного сертификата."
+    }
+  ],
+  "TeamCardData": [
+    {
+      "id": 1,
+      "img": "person-1.png",
+      "stars": 5,
+      "description": "I had a session with William and was amazed! He's creative and made me feel at ease. The stunning photos far exceeded my expectations. Highly recommend for a professional experience!",
+      "fullName": "Greg House"
+    },
+    {
+      "id": 2,
+      "img": "person-2.png",
+      "stars": 5,
+      "description": "William is an outstanding photographer! He made our engagement shoot perfect, showing great attention to detail. The photos are magazine-quality. Highly recommend for anyone seeking excellence!",
+      "fullName": "Emily Thompson"
+    },
+    {
+      "id": 3,
+      "img": "person-3.png",
+      "stars": 5,
+      "description": "Working with William was great! He captures candid moments beautifully. The family photos he took were breathtaking and captured our essence. Definitely a five-star experience!",
+      "fullName": "Emily Thompson"
+    },
+    {
+      "id": 4,
+      "img": "person-1.png",
+      "stars": 5,
+      "description": "I had a session with William and was amazed! He's creative and made me feel at ease. The stunning photos far exceeded my expectations. Highly recommend for a professional experience!",
+      "fullName": "Greg House"
+    },
+    {
+      "id": 5,
+      "img": "person-2.png",
+      "stars": 5,
+      "description": "William is an outstanding photographer! He made our engagement shoot perfect, showing great attention to detail. The photos are magazine-quality. Highly recommend for anyone seeking excellence!",
+      "fullName": "Emily Thompson"
+    },
+    {
+      "id": 6,
+      "img": "person-3.png",
+      "stars": 5,
+      "description": "Working with William was great! He captures candid moments beautifully. The family photos he took were breathtaking and captured our essence. Definitely a five-star experience!",
+      "fullName": "Emily Thompson"
+    },
+    {
+      "id": 7,
+      "img": "person-1.png",
+      "stars": 5,
+      "description": "I had a session with William and was amazed! He's creative and made me feel at ease. The stunning photos far exceeded my expectations. Highly recommend for a professional experience!",
+      "fullName": "Greg House"
+    },
+    {
+      "id": 8,
+      "img": "person-2.png",
+      "stars": 5,
+      "description": "William is an outstanding photographer! He made our engagement shoot perfect, showing great attention to detail. The photos are magazine-quality. Highly recommend for anyone seeking excellence!",
+      "fullName": "Emily Thompson"
+    },
+    {
+      "id": 9,
+      "img": "person-3.png",
+      "stars": 5,
+      "description": "Working with William was great! He captures candid moments beautifully. The family photos he took were breathtaking and captured our essence. Definitely a five-star experience!",
+      "fullName": "Emily Thompson"
+    }
+  ]
+}

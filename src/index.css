@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -15,9 +15,68 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  box-sizing: border-box;
 }
 
-a {
+@font-face {
+  font-family: 'OpenSansCondensed';
+  src: url('./assets/fonts/OpenSansCondensed/OpenSansCondensedBold.woff') format('woff');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'OpenSansCondensed';
+  src: url('./src/assets/fonts/OpenSansCondensed/OpenSansCondensedLight.woff') format('woff');
+  font-weight: 400;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+button:active {
+  cursor: pointer;
+  opacity: 0.6;
+
+  transform: scale(0.98);
+  transition: transform 0.2s ease-in-out;
+
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.gradientServiceCard {
+  background: linear-gradient(180deg, #2c70a2, #5b656c);
+}
+.gradientServiceCardBorder {
+  background: linear-gradient(to bottom, rgb(12, 140, 233, 0), rgb(255, 255, 255));
+  z-index: 10;
+  transition: transform 0.6s ease-in-out;
+}
+.gradientServiceCardBorder:hover {
+  transform: translateY(-50px);
+}
+.test {
+  position: absolute;
+  top: 91%;
+  left: 25px;
+  width: 296px;
+  z-index: -1;
+  height: 42px;
+  filter: blur(10px);
+  border-radius: 80%;
+  background: rgba(244, 239, 224, 0.78);
+  transition: transform 0.4s ease-in-out;
+}
+
+/* a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
@@ -69,4 +128,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
