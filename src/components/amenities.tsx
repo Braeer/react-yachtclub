@@ -20,6 +20,10 @@ export const Amenities = () => {
             img={'/src/assets/img/cards/services/' + card.img}
             title={card.title}
             description={card.description}
+            fullImg={card.modal.fullImg}
+            price={card.modal.price}
+            fullDescription={card.modal.fullDescription}
+            coach={card.modal.coach}
           />
         ))}
       </div>

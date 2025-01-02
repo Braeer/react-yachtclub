@@ -3,7 +3,7 @@ import { NavBar } from './navbar';
 
 export const Header: React.FC = () => {
   return (
-    <header className="bg-headerbg bg-center bg-cover z-20 h-[100vh]">
+    <header className="bg-headerbg bg-center bg-cover z-20 h-[100vh] min-h-[800px]">
       <NavBar />
       <div className="flex flex-col items-center justify-center h-[100vh]">
         <p className="font-OpenSans font-light text-[40px]">Выбор за тобой!</p>

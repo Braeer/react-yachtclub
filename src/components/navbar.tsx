@@ -18,7 +18,9 @@ export const NavBar: React.FC = () => {
         <li>
           <a href="">Галерея</a>
         </li>
-        <li>Контакты</li>
+        <li>
+          <a href="">Контакты</a>
+        </li>
       </ul>
       <Button text="Записаться" />
     </nav>

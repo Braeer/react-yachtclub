@@ -1,11 +1,19 @@
 import React from 'react';
 import { Button } from './button';
 import Modal from 'react-modal';
+import { ServiceModal } from './modal/service-modal';
 
 type Props = {
   img: string;
   title: string;
   description: string;
+  fullDescription: string;
+  price: number;
+  coach: {
+    fullName: string;
+    personImg: string;
+  };
+  fullImg: string;
   onOpen?: () => void;
 };
 
@@ -17,13 +25,31 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    zIndex: 100,
+    maxWidth: '1150px',
+    width: '100%',
+    background: '#323E46',
+    border: 'none',
+    borderRadius: '44px',
+    padding: '60px',
+  },
+  overlay: {
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    zIndex: 1000,
   },
 };
 
 Modal.setAppElement('#root');
 
-export const ServicesCard = ({ img, title, description, onOpen }: Props) => {
+export const ServicesCard = ({
+  img,
+  title,
+  description,
+  onOpen,
+  fullImg,
+  price,
+  fullDescription,
+  coach,
+}: Props) => {
   const [isOpenModal, setIsOpenModal] = React.useState(false);
 
   const openModal = () => {
@@ -63,12 +89,15 @@ export const ServicesCard = ({ img, title, description, onOpen }: Props) => {
         onRequestClose={closeModal}
         isOpen={isOpenModal}
         ariaHideApp={false}
+        bodyOpenClassName={'overflow-hidden h-screen'}
         style={customStyles}>
-        <div className="">
-          <h2>Modal</h2>
-          <p>This is a modal</p>
-          <button onClick={closeModal}>Close</button>
-        </div>
+        <ServiceModal
+          fullDescription={fullDescription}
+          img={'src/assets/img/modal/amenities/' + fullImg}
+          price={price}
+          coach={coach}
+          closeModal={closeModal}
+        />
       </Modal>
     </>
   );

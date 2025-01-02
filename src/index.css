@@ -112,10 +112,26 @@ button:hover {
   overflow: hidden;
   transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
 }
-
 .accordion-content.open {
   max-height: 1000px; /* Установите максимальную высоту, которая больше, чем высота содержимого */
   opacity: 1;
+}
+.about-content {
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+.about-content.open {
+  max-height: 2000px; /* Установите максимальную высоту, которая больше, чем высота содержимого */
+  opacity: 1;
+}
+.h2-text {
+  font-family: 'OpenSansCondensed';
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 108%;
+  letter-spacing: -0.02em;
 }
 /* a {
   font-weight: 500;

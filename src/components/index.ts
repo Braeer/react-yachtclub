@@ -8,3 +8,4 @@ export * from './navbar';
 export * from './services-card';
 export * from './team-card';
 export * from './team';
+export * from './modal/service-modal';

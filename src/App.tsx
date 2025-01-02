@@ -3,7 +3,7 @@ import { ImagesBlock } from './components/images-block';
 
 function App() {
   return (
-    <div className="overflow-hidden">
+    <div id="home" className="overflow-hidden">
       <Header />
       <AboutUS />
       <Amenities />

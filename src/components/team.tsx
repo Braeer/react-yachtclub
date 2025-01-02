@@ -13,10 +13,10 @@ export const Team = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.disconnect(); // Отключаем наблюдение после срабатывания
+          observer.disconnect();
         }
       },
-      { threshold: 0.3 }, // Запускаем анимацию, когда 10% элемента видимо
+      { threshold: 0.3 },
     );
 
     if (ref.current) {
@@ -30,32 +30,17 @@ export const Team = () => {
     };
   }, []);
 
-  const TeamCardCalculited: (value: number) => 0 | 1 | 2 = (value: number) => {
-    if (value % 3 === 0) {
-      return 2;
-    }
-    if (value % 3 === 2) {
-      return 1;
-    } else {
-      return 0;
+  // TODO:Исправить это:
+  const calculateTeamCardPosition = (id: number): 0 | 1 | 2 => {
+    switch (id % 3) {
+      case 0:
+        return 2;
+      case 2:
+        return 1;
+      default:
+        return 0;
     }
   };
-
-  // const cards = Array.from({ length: data.TeamCardData.length + 3 }, (_, index) => ({
-  //   id: index + 1,
-  //   content: (
-  //     <TeamCard
-  //       key={card.id}
-  //       isDownNumber={TeamCardCalculited(card.id)}
-  //       isVisible={isVisible}
-  //       img={'/src/assets/cards/teams/' + card.img}
-  //       stars={card.stars}
-  //       description={card.description}
-  //       fullName={card.fullName}
-  //     />
-  //   ),
-  // }));
-
   const handleShowMore = () => {
     setVisibleCount(data.TeamCardData.length);
   };
@@ -69,9 +54,9 @@ export const Team = () => {
         {data.TeamCardData.slice(0, 3).map((card) => (
           <TeamCard
             key={card.id}
-            isDownNumber={TeamCardCalculited(card.id)}
+            isDownNumber={calculateTeamCardPosition(card.id)}
             isVisible={isVisible}
-            img={'/src/assets/img/cards/teams/' + card.img}
+            img={'/src/assets/img/team/' + card.img}
             stars={card.stars}
             description={card.description}
             fullName={card.fullName}
@@ -81,9 +66,9 @@ export const Team = () => {
           <div key={card.id} className="card w-[350px] z-10">
             <TeamCard
               key={card.id}
-              isDownNumber={TeamCardCalculited(card.id)}
+              isDownNumber={calculateTeamCardPosition(card.id)}
               isVisible={isVisible}
-              img={'/src/assets/img/cards/teams/' + card.img}
+              img={'/src/assets/img/team/' + card.img}
               stars={card.stars}
               description={card.description}
               fullName={card.fullName}
