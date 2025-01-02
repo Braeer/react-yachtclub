@@ -1,4 +1,5 @@
-import { AboutUS, Amenities, Header, Team } from './components';
+import { AboutUS, Amenities, FaqBlocks, Header, Team } from './components';
+import { ImagesBlock } from './components/images-block';
 
 function App() {
   return (
@@ -7,6 +8,8 @@ function App() {
       <AboutUS />
       <Amenities />
       <Team />
+      <FaqBlocks />
+      <ImagesBlock />
     </div>
   );
 }

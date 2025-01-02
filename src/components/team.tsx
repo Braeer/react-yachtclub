@@ -61,7 +61,7 @@ export const Team = () => {
   };
 
   return (
-    <div className="bg-[#F4EFE0] relative z-10 overflow-hidden">
+    <div className="bg-[#F4EFE0] relative">
       <h2 className="text-[64px] font-OpenSans font-bold text-black text-center pt-[100px] pb-[125px]">
         Команда Яхт-Клуба
       </h2>
@@ -71,19 +71,19 @@ export const Team = () => {
             key={card.id}
             isDownNumber={TeamCardCalculited(card.id)}
             isVisible={isVisible}
-            img={'/src/assets/cards/teams/' + card.img}
+            img={'/src/assets/img/cards/teams/' + card.img}
             stars={card.stars}
             description={card.description}
             fullName={card.fullName}
           />
         ))}
         {data.TeamCardData.slice(3, visibleCount).map((card) => (
-          <div key={card.id} className="card w-[350px] z-20">
+          <div key={card.id} className="card w-[350px] z-10">
             <TeamCard
               key={card.id}
               isDownNumber={TeamCardCalculited(card.id)}
               isVisible={isVisible}
-              img={'/src/assets/cards/teams/' + card.img}
+              img={'/src/assets/img/cards/teams/' + card.img}
               stars={card.stars}
               description={card.description}
               fullName={card.fullName}
@@ -99,12 +99,12 @@ export const Team = () => {
           onClick={handleShowMore}></Button>
       )}
       <div />
-      <div className="mb-40" />
-      <img src="/src/assets/img/figure.png" alt="figure" className="absolute top-0 right-0 z-0" />
+      <div className="pb-40" />
+      <img src="/src/assets/img/figure.png" alt="figure" className="absolute top-0 right-0 z-10" />
       <img
         src="/src/assets/img/figure.png"
         alt="figure"
-        className="absolute bottom-[0] left-[10%] z-[-10] translate-x-[-50%]"
+        className="absolute  bottom-[0%] left-[10%] z-10  translate-x-[-50%] translate-y-[50%]"
       />
     </div>
   );

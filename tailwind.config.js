@@ -9,7 +9,7 @@ export default {
         gray: 'rgba(255, 255, 255, 0.6)',
       },
       fontFamily: {
-        Inter: ['Inter'],
+        Inter: ['Inter', 'sans-serif'],
         OpenSans: ['OpenSansCondensed'],
       },
       backgroundImage: {

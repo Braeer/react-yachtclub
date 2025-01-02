@@ -17,7 +17,7 @@ export const Amenities = () => {
         {data.ServiceCardData.map((card) => (
           <ServicesCard
             key={card.id}
-            img={'/src/assets/cards/services/' + card.img}
+            img={'/src/assets/img/cards/services/' + card.img}
             title={card.title}
             description={card.description}
           />
