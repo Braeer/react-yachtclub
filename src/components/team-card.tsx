@@ -1,9 +1,8 @@
-import Star from '../assets/img/star.svg';
 import { cn } from '../lib/utils';
 
 type Props = {
   img: string;
-  stars: number;
+  stars?: number;
   description: string;
   fullName: string;
   isDownNumber: 0 | 1 | 2;
@@ -23,7 +22,7 @@ export const TeamCard = ({
   return (
     <div
       className={cn(
-        'min-h-[503px] h-[540px] w-[358px] bg-[#323E46] relative z-30  rounded-2xl',
+        'min-h-[503px] h-[540px] w-[358px] bg-[#323E46] relative z-30 rounded-2xl my-6',
         (isDownNumber == 1 && isVisible && 'animatedTeamCard60') ||
           (isDownNumber == 2 && isVisible && 'animatedTeamCard120'),
       )}
@@ -38,8 +37,8 @@ export const TeamCard = ({
           {Array(stars)
             .fill(0)
             .map((_, index) => (
-              <img key={index} src={Star} alt="star" className="gap-3" />
-            ))}
+              <img key={index} src="img/star.svg" alt="star" className="gap-3" />
+            )) || <></>}
         </div>
         <p className="text-gray text-xl mb-3">{description}</p>
         <h3 className="text-[20px] font-bold leading-[150%] ">{fullName}</h3>

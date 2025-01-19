@@ -1,15 +1,25 @@
-import { AboutUS, Amenities, FaqBlocks, Header, Team } from './components';
-import { ImagesBlock } from './components/images-block';
+import {
+  AboutUS,
+  Amenities,
+  FaqBlocks,
+  Header,
+  Team,
+  Footer,
+  ImagesBlock,
+  ContactSection,
+} from './components';
 
 function App() {
   return (
-    <div id="home" className="overflow-hidden">
+    <div className="overflow-hidden">
       <Header />
       <AboutUS />
       <Amenities />
       <Team />
       <FaqBlocks />
       <ImagesBlock />
+      <ContactSection />
+      <Footer />
     </div>
   );
 }

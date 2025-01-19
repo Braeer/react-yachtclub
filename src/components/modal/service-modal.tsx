@@ -19,8 +19,8 @@ export const ServiceModal: React.FC<Props> = ({
   coach,
 }) => {
   return (
-    <div className="relative overflow-y-auto overflow-x-auto max-h-[80vh]">
-      <Button text="Закрыть" onClick={closeModal} className="absolute top-[0] right-[0] mb-" />
+    <div className="relative overflow-y-auto overflow-x-auto max-h-[90vh] md:max-h-[80vh]">
+      <Button text="Закрыть" onClick={closeModal} className="absolute top-[0] right-[0]" />
 
       <div className="max-w-[900px] w-full mx-auto">
         <img src={img} alt="image" className=" pt-[100px] max-w-[900px] w-full" />
@@ -35,7 +35,7 @@ export const ServiceModal: React.FC<Props> = ({
           {coach.map((item) => (
             <div className="flex items-center gap-4 flex-col max-w-[150px] p-4">
               <img
-                src={`/src/assets/img/team/${item.personImg}`}
+                src={`img/team/${item.personImg}`}
                 alt="coach"
                 className="w-[100px] h-[100px] rounded-full"
               />
