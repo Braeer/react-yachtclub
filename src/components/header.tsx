@@ -1,4 +1,4 @@
-import { Button } from './button';
+import { Button } from './ui/button';
 import { NavBar } from './navbar';
 
 export const Header: React.FC = () => {

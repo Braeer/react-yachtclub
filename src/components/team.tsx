@@ -1,4 +1,4 @@
-import { Button } from './button';
+import { Button } from './ui/button';
 import { TeamCard } from './team-card';
 import data from '../assets/data.json';
 import { useEffect, useRef, useState } from 'react';

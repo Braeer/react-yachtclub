@@ -1,6 +1,6 @@
 import React from 'react';
 import aboutImage from '../assets/img/AboutUsImage.jpg';
-import { Button } from './button';
+import { Button } from './ui/button';
 import data from '../assets/data.json';
 
 export const AboutUS = () => {

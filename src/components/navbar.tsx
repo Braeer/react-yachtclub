@@ -1,5 +1,5 @@
 import logo from '../assets/img/logo.png';
-import { Button } from './button';
+import { Button } from './ui/button';
 
 export const NavBar: React.FC = () => {
   return (

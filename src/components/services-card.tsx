@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from './button';
+import { Button } from './ui/button';
 import Modal from 'react-modal';
 import { ServiceModal } from './modal/service-modal';
 
