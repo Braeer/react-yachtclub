@@ -2,7 +2,7 @@ import { ServicesCard } from '../services-card';
 import data from '../../assets/data.json';
 import { TitleText } from '../ui';
 
-export const Amenities = () => {
+const Amenities = () => {
   return (
     <div id="amenities" className="bg-[#323E46]">
       <div className="">
@@ -27,7 +27,9 @@ export const Amenities = () => {
         ))}
       </div>
       {/* <img src={bottomImage} alt="AmenitiesBottomImage" className="block bg-repeat mt-20" /> */}
-      <div className="bg-[url('img/AmenitiesBottomImage.png')] bg-cover mt-20 h-[200px]"></div>
+      <div className="bg-AmenitiesBottomImage bg-cover mt-20 h-[200px]"></div>
     </div>
   );
 };
+
+export default Amenities;

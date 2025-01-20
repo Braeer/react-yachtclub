@@ -3,7 +3,7 @@ import { Button } from '../ui/button';
 import data from '../../assets/data.json';
 import { BlueShadow, TitleText } from '../ui';
 
-export const AboutUS = () => {
+const AboutUS = () => {
   const [openMore, setOpenMore] = React.useState(false);
   const contentRef = React.useRef<null | HTMLDivElement>(null);
 
@@ -45,3 +45,5 @@ export const AboutUS = () => {
     </section>
   );
 };
+
+export default AboutUS;

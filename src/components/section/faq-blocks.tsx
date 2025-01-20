@@ -3,7 +3,7 @@ import { AccordionQuestion } from '../accordion-question';
 import data from '../../assets/data.json';
 import { TitleText } from '../ui';
 
-export const FaqBlocks = () => {
+const FaqBlocks = () => {
   return (
     <div className="bg-[#323E46] relative">
       <TitleText text="Часто задаваемые вопросы ?!" className="pt-[100px]" />
@@ -14,11 +14,13 @@ export const FaqBlocks = () => {
       </div>
 
       <img
+        loading="lazy"
         src="img/figure-small.png"
         alt="figure"
         className="hidden lg:block absolute top-[60%] right-[-5%] z-0"
       />
       <img
+        loading="lazy"
         src="img/figure-small.png"
         alt="figure"
         className="hidden lg:block absolute z-[10] translate-x-[-50%] top-[40%]"
@@ -26,3 +28,5 @@ export const FaqBlocks = () => {
     </div>
   );
 };
+
+export default FaqBlocks;

@@ -68,6 +68,7 @@ export const ServicesCard = ({
           <div className="gradientServiceCard max-w-[358px] w-full h-[526px] px-[15px] md:px-[30px] pb-12 pt-[68px] relative rounded-3xl z-5 mx-auto">
             <img
               src={img}
+              loading="lazy"
               alt="image service"
               className="absolute top-[-80px] rounded-full z-10 left-[110px] w-[138px] h-[138px]"
             />

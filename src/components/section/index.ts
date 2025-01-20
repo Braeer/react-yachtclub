@@ -1,4 +1,4 @@
-export * from './about-us';
+// export * from './about-us';
 export * from './amenities';
 export * from './contact-section';
 export * from './faq-blocks';

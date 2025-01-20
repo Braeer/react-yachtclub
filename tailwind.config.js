@@ -13,8 +13,8 @@ export default {
         OpenSans: ['OpenSansCondensed'],
       },
       backgroundImage: {
-        headerbg: "url('img/headerbg.webp')",
-        AmenitiesBottomImage: "url('img/AmenitiesBottomImage.png')",
+        headerbg: "url('../public/img/headerbg.webp')",
+        AmenitiesBottomImage: "url('../public/img/AmenitiesBottomImage.png')",
       },
     },
   },

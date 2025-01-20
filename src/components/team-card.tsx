@@ -5,7 +5,7 @@ type Props = {
   stars?: number;
   description: string;
   fullName: string;
-  isDownNumber: 0 | 1 | 2;
+  isDownNumber: number;
   isVisible: boolean;
   style?: React.CSSProperties;
 };
@@ -19,15 +19,17 @@ export const TeamCard = ({
   isVisible,
   style,
 }: Props) => {
+  const number = isDownNumber % 3;
   return (
     <div
       className={cn(
         'min-h-[503px] h-[540px] w-[358px] bg-[#323E46] relative z-30 rounded-2xl my-6',
-        (isDownNumber == 1 && isVisible && 'animatedTeamCard60') ||
-          (isDownNumber == 2 && isVisible && 'animatedTeamCard120'),
+        (number == 2 && isVisible && 'animatedTeamCard60') ||
+          (number == 0 && isVisible && 'animatedTeamCard120'),
       )}
       style={style}>
       <img
+        loading="lazy"
         src={img}
         alt="avatar"
         className="w-[138px] rounded-full absolute top-[-70px] left-[50%] translate-x-[-50%]"
@@ -37,7 +39,7 @@ export const TeamCard = ({
           {Array(stars)
             .fill(0)
             .map((_, index) => (
-              <img key={index} src="img/star.svg" alt="star" className="gap-3" />
+              <img loading="lazy" key={index} src="img/star.svg" alt="star" className="gap-3" />
             )) || <></>}
         </div>
         <p className="text-gray text-xl mb-3">{description}</p>
