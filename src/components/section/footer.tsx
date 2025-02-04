@@ -5,7 +5,7 @@ export const Footer = () => {
         <h4 className="text-gray text-center font-bold font-OpenSans text-[22px]">
           Design by{' '}
           <a href="" className="text-white hover:underline">
-            Чертила
+            Милан
           </a>
         </h4>
         <h4 className="text-gray text-center font-bold font-OpenSans text-[22px]">
