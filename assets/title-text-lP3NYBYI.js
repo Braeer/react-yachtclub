@@ -1,0 +1,1 @@
+import{j as n,c as s}from"./index-Da-9Mu0f.js";const r=({text:t,className:e,black:x})=>n.jsx("h1",{className:s("text-[48px] md:text-[64px] font-OpenSans font-bold text-white text-center",x&&"text-black",e),children:t});export{r as T};
