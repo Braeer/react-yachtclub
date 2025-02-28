@@ -9,10 +9,10 @@ type Props = {
   description: string;
   fullDescription: string;
   price: number;
-  coach: {
+  coach: Array<{
     fullName: string;
     personImg: string;
-  };
+  }>;
   fullImg: string;
   onOpen?: () => void;
 };
@@ -30,7 +30,7 @@ const customStyles = {
     background: '#323E46',
     border: 'none',
     borderRadius: '44px',
-    padding: '60px',
+    // padding: '60px',
   },
   overlay: {
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
@@ -61,19 +61,20 @@ export const ServicesCard = ({
 
   return (
     <>
-      <div className="relative">
+      <div className="relative p-2">
         <div
           onClick={onOpen}
-          className="cursor-pointer mt-20 mb-5 w-[360px] h-[528px] gradientServiceCardBorder rounded-3xl content-center z-10">
-          <div className="gradientServiceCard w-[358px] h-[526px] px-[30px] pb-12 pt-[68px] relative rounded-3xl z-5 mx-auto">
+          className="cursor-pointer mt-20 mb-5 max-w-[360px] h-[528px] gradientServiceCardBorder rounded-3xl content-center z-10">
+          <div className="gradientServiceCard max-w-[358px] w-full h-[526px] px-[15px] md:px-[30px] pb-12 pt-[68px] relative rounded-3xl z-5 mx-auto">
             <img
               src={img}
+              loading="lazy"
               alt="image service"
               className="absolute top-[-80px] rounded-full z-10 left-[110px] w-[138px] h-[138px]"
             />
             <div className="flex flex-col pt-2 relative">
               <h3 className="text-[24px] font-bold leading-[110%] text-white pb-[21px]">{title}</h3>
-              <p className="text-xl leading-[150%] text-white tracking-[0.03em] font-normal max-w-[284px]">
+              <p className="text-xl leading-[150%] min-w-[280px] text-white tracking-[0.03em] font-normal max-w-[284px]">
                 {description}
               </p>
               <Button
@@ -93,7 +94,7 @@ export const ServicesCard = ({
         style={customStyles}>
         <ServiceModal
           fullDescription={fullDescription}
-          img={'src/assets/img/modal/amenities/' + fullImg}
+          img={'img/modal/amenities/' + fullImg}
           price={price}
           coach={coach}
           closeModal={closeModal}

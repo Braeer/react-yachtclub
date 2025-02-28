@@ -26,13 +26,18 @@
 }
 @font-face {
   font-family: 'OpenSansCondensed';
-  src: url('./src/assets/fonts/OpenSansCondensed/OpenSansCondensedLight.woff') format('woff');
+  src: url('./assets/fonts/OpenSansCondensed/OpenSansCondensedLight.woff') format('woff');
   font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
   margin: 0 auto;
+  min-width: 300px;
 }
 
 button:hover {
@@ -126,13 +131,13 @@ button:hover {
   max-height: 2000px; /* Установите максимальную высоту, которая больше, чем высота содержимого */
   opacity: 1;
 }
-.h2-text {
+/* .h2-text {
   font-family: 'OpenSansCondensed';
   font-weight: 700;
   font-size: 64px;
   line-height: 108%;
   letter-spacing: -0.02em;
-}
+} */
 /* a {
   font-weight: 500;
   color: #646cff;

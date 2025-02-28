@@ -1,4 +1,4 @@
-.animatedTeamCard60 {
+/* .animatedTeamCard60 {
   transition: transform 0.5s ease-in-out;
   transform: translateY(60px);
   transition-delay: 0.5s;
@@ -9,6 +9,21 @@
   transform: translateY(120px);
   transition-delay: 0.5s;
   margin-bottom: 120px;
+} */
+
+@media screen and (min-width: 1180px) {
+  .animatedTeamCard60 {
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(60px);
+    transition-delay: 0.5s;
+    margin-bottom: 60px;
+  }
+  .animatedTeamCard120 {
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(120px);
+    transition-delay: 0.5s;
+    margin-bottom: 120px;
+  }
 }
 
 .card {
